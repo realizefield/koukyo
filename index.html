@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GAMBA 歴史総合 近世編 — 単元表</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1209;--paper:#faf7f0;--paper2:#f0e9d8;
+  --gold:#9a7200;--gold-l:#e8d48a;--gold-pale:#fdf6dc;
+  --red:#7a1414;--blue:#1a3a5c;--blue-m:#2c5f8a;--blue-l:#dbeeff;
+  --border:#c8b98a;--shadow:rgba(90,60,10,.13);
+}
+body{font-family:"Meiryo","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  background:var(--paper);color:var(--ink);font-size:16px;line-height:1.85}
+.sh{background:var(--blue);color:#fff;border-bottom:4px solid var(--gold);padding:0;position:sticky;top:0;z-index:100}
+.shi{max-width:900px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px}
+.logo{font-size:18px;font-weight:700;color:var(--gold-l)}
+.logo span{color:#fff;font-size:12px;font-weight:400;display:block}
+.pw{max-width:900px;margin:0 auto;padding:28px 20px 40px}
+.ih{background:var(--blue);color:#fff;border-radius:13px;padding:28px 28px 24px;margin-bottom:24px;position:relative;overflow:hidden}
+.ih::after{content:'⚓';position:absolute;right:22px;bottom:6px;font-size:58px;opacity:.08}
+.ih h1{font-size:22px;font-weight:700;margin-bottom:6px}
+.ih p{color:rgba(255,255,255,.78);font-size:14px;line-height:1.7}
+.stb{background:linear-gradient(90deg,#6b3000,#b02820);color:#fff;border-radius:10px;
+  padding:12px 17px;margin-bottom:16px;display:none;align-items:center;gap:11px;font-size:14px}
+.stb.show{display:flex}
+.stn{font-size:26px;font-weight:700;color:var(--gold-l)}
+.pbw{background:var(--paper2);border:1px solid var(--border);border-radius:10px;padding:15px 18px;margin-bottom:20px}
+.pbl{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:7px;display:flex;justify-content:space-between}
+.pbt{height:10px;background:var(--border);border-radius:5px;overflow:hidden}
+.pbf{height:100%;background:linear-gradient(90deg,var(--blue-m),var(--gold));border-radius:5px;transition:width .5s}
+.ug{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:22px}
+.uc{background:#fff;border:1.5px solid var(--border);border-radius:11px;padding:16px 18px;
+  cursor:pointer;text-decoration:none;color:var(--ink);transition:all .2s;display:block;position:relative;overflow:hidden}
+.uc:hover{border-color:var(--gold);box-shadow:0 4px 15px var(--shadow);transform:translateY(-2px)}
+.ucn{font-size:11px;color:var(--blue-m);font-weight:700;letter-spacing:.1em;margin-bottom:4px}
+.uct{font-size:14px;font-weight:700;line-height:1.5;margin-bottom:6px}
+.ucm{font-size:12px;color:#888}
+.ucs{position:absolute;top:12px;right:12px;font-size:17px}
+.uc.dn{border-color:#a5d6a7}.uc.dn .ucn{color:#388e3c}
+.hb{background:#fff;border:1.5px solid var(--border);border-radius:10px;padding:15px 18px;font-size:14px}
+.hb h3{font-size:14px;font-weight:700;color:var(--blue);margin-bottom:7px}
+@media(max-width:600px){.ug{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="sh">
+  <div class="shi">
+    <div class="logo">GAMBA 歴史総合<span>江原予備校 — 近世編（16〜18世紀）</span></div>
+  </div>
+</header>
+<div class="pw">
+  <div class="ih">
+    <h1>近世の世界史・日本史</h1>
+    <p>十字軍の失敗からはじまる「2つのR」，大航海時代，宗教改革，<br>そして世界と日本がつながる戦国時代まで。<br>各単元を順番に，または自分のペースで学習しましょう。</p>
+  </div>
+  <div class="stb" id="stb">
+    <div><div style="font-size:12px;opacity:.8">連続学習中</div><div class="stn" id="stn">0</div></div>
+    <div><div style="font-weight:700">単元クリア！</div><div style="opacity:.8;font-size:13px">今日もがんばっています。継続は力なり！</div></div>
+    <div style="margin-left:auto;font-size:26px">🔥</div>
+  </div>
+  <div class="pbw">
+    <div class="pbl"><span>学習進捗</span><span id="pt">0 / 6 単元完了</span></div>
+    <div class="pbt"><div class="pbf" id="pf" style="width:0%"></div></div>
+  </div>
+  <div class="ug">
+    <a href="unit1.html" class="uc" data-u="1"><div class="ucs" id="s1">📖</div>
+      <div class="ucn">UNIT 1</div><div class="uct">十字軍の遠征と失敗</div>
+      <div class="ucm">聖地奪還・遠征の結果・教皇権の失墜</div></a>
+    <a href="unit2.html" class="uc" data-u="2"><div class="ucs" id="s2">📖</div>
+      <div class="ucn">UNIT 2</div><div class="uct">ルネサンスと三大技術</div>
+      <div class="ucm">文芸復興・ヒューマニズム・科学革命</div></a>
+    <a href="unit3.html" class="uc" data-u="3"><div class="ucs" id="s3">📖</div>
+      <div class="ucn">UNIT 3</div><div class="uct">宗教改革とプロテスタント</div>
+      <div class="ucm">ルター・カルヴァン・イギリス国教会</div></a>
+    <a href="unit4.html" class="uc" data-u="4"><div class="ucs" id="s4">📖</div>
+      <div class="ucn">UNIT 4</div><div class="uct">反宗教改革とイエズス会</div>
+      <div class="ucm">トリエント公会議・ザビエル来日</div></a>
+    <a href="unit5.html" class="uc" data-u="5"><div class="ucs" id="s5">📖</div>
+      <div class="ucn">UNIT 5</div><div class="uct">大航海時代 — ポルトガルの活躍</div>
+      <div class="ucm">ディアス・ヴァスコ=ダ=ガマ・喜望峰</div></a>
+    <a href="unit6.html" class="uc" data-u="6"><div class="ucs" id="s6">📖</div>
+      <div class="ucn">UNIT 6</div><div class="uct">大航海時代 — スペインとアメリカ征服</div>
+      <div class="ucm">コロンブス・マゼラン・コンキスタドール</div></a>
+  </div>
+  <div class="hb">
+    <h3>💡 学習のヒント</h3>
+    <p>「チャレンジ開始」を押すと語句が消えて穴埋め問題になります。<br>
+    語句をクリックして選び，空欄をクリックして入れましょう。<br>
+    全問正解すると「次の単元へ」ボタンが使えるようになります！</p>
+  </div>
+</div>
+<script>
+(function(){
+  var total=6,done=0;
+  for(var i=1;i<=total;i++){
+    var v;try{v=localStorage.getItem('gu'+i);}catch(e){}
+    var card=document.querySelector('[data-u="'+i+'"]');
+    var st=document.getElementById('s'+i);
+    if(v==='done'){done++;if(card)card.classList.add('dn');if(st)st.textContent='✅';}
+  }
+  document.getElementById('pt').textContent=done+' / '+total+' 単元完了';
+  document.getElementById('pf').style.width=(done/total*100)+'%';
+  var streak=0;try{streak=parseInt(localStorage.getItem('gstr')||'0');}catch(e){}
+  document.getElementById('stn').textContent=streak;
+  if(streak>0)document.getElementById('stb').classList.add('show');
+})();
+</script>
+</body>
+</html>
